@@ -78,3 +78,8 @@ nmap в d
 " Тема для **NeoVim**
 syntax on
 colorscheme iceberg
+
+" add pp stuffs
+au! BufNewFile,BufReadPost *.{pp} set filetype=pp foldmethod=indent
+autocmd FileType pp setlocal ts=4 sts=4 sw=4 expandtab
+"
