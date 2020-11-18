@@ -42,6 +42,11 @@ Plug 'scrooloose/syntastic'
 
 " Python-mode https://github.com/python-mode/python-mode
 "Plug 'python-mode/python-mode'
+"
+
+" Puppet 
+Plug 'rodjek/vim-puppet'
+
 call plug#end()
 
 " auto-completion
