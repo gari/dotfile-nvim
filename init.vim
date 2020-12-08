@@ -1,5 +1,8 @@
 call plug#begin()
 Plug 'preservim/nerdtree'
+" Дополнения для NERDTree
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'scrooloose/nerdcommenter'
 
 " https://github.com/mrk21/yaml-vim
 Plug 'mrk21/yaml-vim'
@@ -21,10 +24,7 @@ Plug 'davidhalter/jedi-vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 " Сoc - автодополнение
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-" Дополнения для NERDTree
-Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
-Plug 'scrooloose/nerdcommenter'
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Дополнение для Git, а также иконки для NERDTree
 Plug 'airblade/vim-gitgutter'
 Plug 'ryanoasis/vim-devicons'
@@ -88,3 +88,29 @@ colorscheme iceberg
 au! BufNewFile,BufReadPost *.{pp} set filetype=pp foldmethod=indent
 autocmd FileType pp setlocal ts=4 sts=4 sw=4 expandtab
 "
+
+
+nnoremap th  :tabfirst<CR>
+nnoremap tk  :tabnext<CR>
+nnoremap tj  :tabprev<CR>
+nnoremap tl  :tablast<CR>
+nnoremap tt  :tabedit<Space>
+nnoremap tn  :tabnext<Space>
+nnoremap tm  :tabm<Space>
+nnoremap td  :tabclose<CR>
+" Alternatively use
+" nnoremap th :tabnext<CR>
+" nnoremap tl :tabprev<CR>
+"nnoremap tn :tabnew<CR>
+
+nnoremap <leader>1 1gt
+nnoremap <leader>2 2gt
+nnoremap <leader>3 3gt
+nnoremap <leader>4 4gt
+nnoremap <leader>5 5gt
+nnoremap <leader>6 6gt
+nnoremap <leader>7 7gt
+nnoremap <leader>8 8gt
+nnoremap <leader>9 9gt
+nnoremap <leader>10 0gt
+
